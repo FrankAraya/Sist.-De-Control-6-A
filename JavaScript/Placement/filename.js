@@ -1,3 +1,3 @@
 function sayHello() {
-alert("Hello World")
+alert("Hola mundo(funciona boton con java)")
 }
