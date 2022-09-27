@@ -1,0 +1,38 @@
+</head>
+    <body>
+    
+            <script type="text/javascript">
+            
+                var Frecuencia=750000;
+               
+                var Capacitancia=0.000015;  
+                
+                var ValordePi=6.2831853072;
+                
+                var multiplicacion= ValordePi*Capacitancia*Frecuencia;
+                
+                var XC= 1/multiplicacion;
+                
+                var XL= multiplicacion;
+                
+                function cuentas() {
+                
+                    document.write("<br/>Frecuencia= "+ Frecuencia);
+                    
+                    document.write("<br/>capacitancia= "+ Capacitancia);
+    
+                    document.write("<br/>XC= "+ XC);
+                    
+                    document.write("<br/>XL= "+ XL);
+                    
+                    document.write("<p><a href='../index.html'>volver</a></p>")
+
+                }
+                
+                </script>
+                
+                <a href="../index.html" class="nav-link">Volver</a>
+                
+                 <input type="button" onclick="cuentas()" value="Valor de XC y XL"/>
+    </body>
+    </html>
