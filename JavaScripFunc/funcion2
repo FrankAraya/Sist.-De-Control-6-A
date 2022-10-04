@@ -1,0 +1,33 @@
+<html>
+<head>
+<script type="text/javascript">
+<!--
+function hypotenuse(a, b) {
+ function square(x) { return x*x; }
+
+ return Math.sqrt(square(a) + square(b));
+}
+function suma(par1, par2){
+ return par1+par2;
+}
+
+
+function secondFunction(h,b){
+ var result;
+ result = hypotenuse(h,b);
+ document.write ( "hipotenus=" + result );
+ document.write ( "<br/>suma=" + suma(h,b) );
+}
+//-->
+</script>
+</head>
+<body>
+<p>Click the following button to call the function</p>
+<form>
+<script>
+	
+</script>
+</form>
+<p>Use different parameters inside the function and then try...</p>
+</body>
+</html>
