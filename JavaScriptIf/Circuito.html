@@ -9,16 +9,16 @@ var Multiplic = (Frec*Capaci*ValorPI);
 var XC = 1/Multiplic;
 var XL = Multiplic;
 
-if( Capaci > 0 ){
+if( XC > XL ){
 
  document.write("<b>Capacitiva</b>");
 }
 
-else if( Capaci < 0 )
+else if( XC < XL )
 
  {document.write("<b>Inductiva</b>")}
  
-else if( Capaci = 0 )
+else if( XC = XL )
 
 {document.write("<b>Resonancia</b>")}
 
