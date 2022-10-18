@@ -1,2 +1,25 @@
 <html>
   <body>
+    <script> type="text/javascript"
+           <!--
+      
+    var total = 0;
+    var cantidad = 0;
+      
+      do{ingresado = prompt ("Ingresar un valor");//llega como string
+         ingresado = parseInt(ingresado);//convertido
+         total+= ingresado;//total=total + ingresado
+         cantidad++;}
+      
+      while(confirm("¿Quiere cargar otro numero?"));
+      document.write("Total acumulado: "+ total + "<br />");
+      document.write("Cantidad de valores: " + cantidad + "<br />");
+      
+      var promedio = total/cantidad;
+      document.write("Promedio de valores: "+ promedio +"<br />");
+      
+      <a href="../index.html" class="nav-link">Volver</a>  
+      
+    </script>
+  </body>
+    
