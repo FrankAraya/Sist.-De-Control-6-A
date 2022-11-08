@@ -1,1 +1,55 @@
-
+<html>
+<head>
+	<script type="text/javascript">
+	
+		var R = Number(prompt("(Ingresar la Resistencia)"))
+		
+		var F = Number(prompt("(Ingresar la Frecuencia)"))
+               
+		var C = Number(prompt("Ingresar la Capacitancia"))
+                
+		var I = Number(prompt("Ingresar la Inductancia"))
+                
+		var Dospi = 3.14159265359 * 2;
+		
+		function square(x){
+		 return x*x}
+		 
+		function XC(F, I){
+			MultiplicacionXC= Dospi*C*I;
+			return MultiplicacionXC;}
+			
+		function XL(F, C){
+			MultiplicacionXL= 1/(Dospi*C*F)
+			return MultiplicacionXL;}
+			
+		function Z(R, F, C, I){
+			ZCuadrado= (square(R) + square((XL(F,I)-XC(F,C))));
+			ValorZ= Math.sqrt (ZCuadrado)
+			return ValorZ;}
+		
+		function Phi(R,C,I,F){
+			ValorPhi=Math.atan (XL(F,I)-XC(F,C)/R);
+		return ValorPhi;}
+		
+		function cuentas(){
+	document.write("<br/>Valores Obtenidos")
+	document.write("<br/>")
+    document.write("<br/>La Rectancia Inductiva(RL) es= "+XC(F, I));
+    document.write("<br/>La Rectancia Capacitiva(RC) es= "+XL(F, I));
+    document.write("<br/>La Resistencia es= "+Z(R,C,I,F));
+	document.write("<br/>El valor de Phi es= "+Phi(R,C,I,F));
+	document.write("<p><a href='../index.html'>volver</a></p>")}
+  
+</script>
+</head>
+<body>
+	<h3>»Ejercicio funciones XL,XC, Phi y Z;</h3> 
+	<input type="button" onclick="cuentas()" value="Resultados"/>
+	</br>  
+	</br>
+	</br>  
+	<a href="../index.html" class="nav-link">Volver al Inicio</a> 
+	</br>   
+</body>
+</html>
