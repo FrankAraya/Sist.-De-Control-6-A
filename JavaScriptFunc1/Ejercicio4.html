@@ -1,1 +1,37 @@
-
+</head>
+<body>
+	
+	<script type="text/javascript">
+	
+	var l1 = Number(prompt("(Ingresar la longitud del lado 1)"))
+	var l2 = Number(prompt("(Ingresar la longitud del lado 2)"))
+	var l3 = Number(prompt("(Ingresar la longitud del lado 3)"))
+	
+	function esTriangulo(){
+	
+		var r1= l1+l2;
+		var r2= l1+l3;
+		var r3= l2+l3;
+	
+			if (r1 >= l3){
+			if (r2 >= l2){
+			if (r3 >= l1){
+	
+		document.write("Verdadero");}
+		else{document.write("Falso");}}
+		else{document.write("Falso");}}
+		else{document.write("Falso");}
+		document.write("<p><a href='../index.html'>volver</a></p>")}
+		
+	 </script> 
+   
+<h3>»Ejercicio Triangulo;</h3> 
+<input type="button" onclick="esTriangulo()" value="Es triangulo?"/>
+</br>  
+</br>
+</br>  
+<a href="../index.html" class="nav-link">Volver al Inicio</a> 
+</br>   
+</body>
+</html>
+	</script> 
