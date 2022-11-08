@@ -1,1 +1,35 @@
-
+<html>
+<head>
+	<script type="text/javascript">
+	
+		var M = Number(prompt("(Ingresar la Masa)"))
+		var A = Number(prompt("(Ingresar la Altura)"))
+		var G = 9.8
+		
+		function EP(A,M,G){
+		 ValorEP= M*A*G;
+		 return ValorEP;}
+		 
+		function V(A,M,G){
+         V= 2*G*A/M
+         Vraiz= Math.sqrt (V)
+         return Vraiz;} 
+		 	 
+		function cuentas(){
+	document.write("<br/>Valores Obtenidos")
+	document.write("<br/>")
+    document.write("<br/>La Energia Potencial(EP) es= "+EP(A,M,G));
+    document.write("<br/>La Energia Cinematica(EC) es= "+EP(A,M,G));
+    document.write("<br/>La Velocidad cuando llega el suelo(V) es= "+V(A,M,G))}
+</script>
+</head>
+<body>
+	<h3>»Ejercicio Masa, Altura, Energia y Velocidad;</h3> 
+	<input type="button" onclick="cuentas()" value="Resultados"/>
+	</br>  
+	</br>
+	</br>  
+	<a href="../index.html" class="nav-link">Volver al Inicio</a> 
+	</br>   
+</body>
+</html>
