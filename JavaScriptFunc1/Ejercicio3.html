@@ -1,1 +1,36 @@
+<html>
+<head>
 
+</head>
+<body>
+	
+	<script type="text/javascript">
+    var a = Number(prompt("(Ingresar el valor de la altura del triangulo)"))
+    var b = Number(prompt("(ingresar el valor de la base del triangulo)"))
+  
+    function hipotenusa(b, a) {
+      return Math.sqrt(square(b) + square(a));} 
+ 
+    function perimetro(a, b, c) {
+      return (b + a + hipotenusa(b, a));}
+  
+    function area(b, h){
+      return ((b*a)/2);}
+ 
+    var h = hipotenusa(b, a);
+    var p = perimetro(b, a);
+    var a = area(b, a);
+    
+    function cuentas() {
+    document.write("<br/>La hipotenusa es= "+h)
+    document.write("<br/>El perimetro es= "+p)
+    document.write("<br/>El area es= "+p)}
+   
+   </script>
+   
+    <input type="button" onclick="cuentas()" value="Resultados"/>
+   
+   <a href="../index.html" class="nav-link">Volver</a>     
+   
+
+  
