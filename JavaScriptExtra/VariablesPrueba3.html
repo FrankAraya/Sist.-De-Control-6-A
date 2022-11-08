@@ -3,9 +3,11 @@
     
             <script type="text/javascript">
             
-                var Frecuencia=750000;
+                var Frecuencia=Number(prompt("(Ingresar la Frecuencia)"))
                
-                var Capacitancia=0.000015;  
+                var Capacitancia=Number(prompt("Ingresar la Capacitancia"))
+                
+                var Inductancia=Number(prompt("Ingresar la Inductancia"))
                 
                 var ValordePi=6.2831853072;
                 
@@ -19,7 +21,9 @@
                 
                     document.write("<br/>Frecuencia= "+ Frecuencia);
                     
-                    document.write("<br/>capacitancia= "+ Capacitancia);
+                    document.write("<br/>Capacitancia= "+ Capacitancia);
+                    
+                    document.write("<br/>Inductancia= "+Inductancia);
     
                     document.write("<br/>XC= "+ XC);
                     
@@ -31,7 +35,7 @@
                 
                 </script>
                 
-                 <input type="button" onclick="cuentas()" value="Valor de XC y XL"/>
+                 <input type="button" onclick="cuentas()" value="Resultados Obtenidos"/>
         
                  <a href="../index.html" class="nav-link">Volver</a>
     </body>
