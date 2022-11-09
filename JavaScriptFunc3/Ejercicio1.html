@@ -11,16 +11,24 @@
 		 return ValorEP;}
 		 
 		function V(A,M,G){
-         V= 2*G*A/M
-         Vraiz= Math.sqrt (V)
+         ValorV= 2*G*A/M
+         Vraiz= Math.sqrt (ValorV)
          return Vraiz;} 
-		 	 
+		 	
+		
 		function cuentas(){
-	document.write("<br/>Valores Obtenidos")
-	document.write("<br/>")
+	document.write("<h3>Valores Obtenidos</h3>")
     document.write("<br/>La Energia Potencial(EP) es= "+EP(A,M,G));
     document.write("<br/>La Energia Cinematica(EC) es= "+EP(A,M,G));
-    document.write("<br/>La Velocidad cuando llega el suelo(V) es= "+V(A,M,G))}
+	document.write("<br/>La Velocidad cuando llega el suelo(V) es= "+V(A,M,G));
+	
+	if(V(A,M,G)>10){
+		document.write("<b> La velocidad es rapida</b>");}
+	else{
+		document.write("<b> La velocidad es lenta</b>");}
+	
+		document.write("<p><a href='../index.html'>Volver al Index</a></p>")}
+
 </script>
 </head>
 <body>
